@@ -1,3 +1,6 @@
+<div>
+  <img src="anti.png"/>
+</div>
 # 🛡️ Sistem Pelaporan Anti-Bullying Sekolah
 
 Website sistem informasi pelaporan tindakan perundungan (*bullying*) di lingkungan sekolah. Proyek ini dikembangkan untuk menyediakan sarana pelaporan yang aman, anonim, dan rahasia bagi siswa, sekaligus membantu Guru Bimbingan Konseling (BK) dalam mengelola serta menindaklanjuti laporan.
