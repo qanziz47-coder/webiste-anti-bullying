@@ -190,7 +190,7 @@ include 'partials/head.php';
             <div class="form-step" id="step-5" style="display: none;">
               <label class="form-label fw-bold fs-5 mb-3">5. Ceritakan kejadiannya <span class="text-danger">*</span></label>
               <textarea name="kronologi" id="kronologi" rows="6" class="form-control bg-light border-0 mb-3" placeholder="Ceritakan apa yang terjadi, kapan, di mana, dan siapa yang terlibat..." required></textarea>
-              <div class="form-text mb-4"><i class="bi bi-info-circle me-1"></i>Ceritakan sedetail mungkin agar Guru BK mudah memahaminya.</div>
+              <div class="form-text mb-4"><i class="bi bi-info-circle me-1"></i>Ceritakan sedetail mungkin agar Satgas Anti-Bullying mudah memahaminya.</div>
               
               <div class="d-flex justify-content-between">
                 <button type="button" class="btn btn-light fw-bold" onclick="prevStep(4)"><i class="bi bi-arrow-left me-1"></i> Kembali</button>
@@ -320,7 +320,7 @@ include 'partials/head.php';
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 
-<!-- JAVASCRIPT MULTI-STEP -->
+<!-- JAVASCRIPT MULTI-STEP CARD -->
 <script>
     function updateProgress(currentStep) {
         const percent = Math.round((currentStep / 6) * 100); // 6 Langkah

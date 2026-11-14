@@ -2,13 +2,13 @@
   <div class="container">
     <div class="row g-4">
       
-      <!-- Kolom 1: Identitas -->
+      <!-- Identitas -->
       <div class="col-md-4">
         <h5 class="fw-bold"><i class="bi bi-shield-check text-danger me-2"></i>AntiBullying</h5>
         <p class="small text-secondary">Platform pelaporan bullying yang aman, anonim, dan dilindungi hukum.</p>
       </div>
 
-      <!-- Kolom 2: Kontak Bantuan -->
+      <!-- Kontak Bantuan -->
       <div class="col-md-4">
         <h5 class="fw-bold">Kontak Bantuan</h5>
         <p class="small mb-2"><i class="bi bi-envelope me-2 text-secondary"></i>sapa129@kemenpppa.go.id</p>
@@ -16,7 +16,7 @@
         <p class="small mb-0"><i class="bi bi-clock me-2 text-secondary"></i>Layanan 24 Jam</p>
       </div>
 
-      <!-- Kolom 3: Link -->
+      <!-- Link -->
       <div class="col-md-4">
         <h5 class="fw-bold">Tautan</h5>
         <ul class="list-unstyled small mb-0">
@@ -29,7 +29,7 @@
 
     </div>
 
-    <!-- Kotak Perlindungan Perempuan -->
+    <!-- Kotak kecil Perlindungan Perempuan -->
     <div class="row mt-4">
       <div class="col-12">
         <div class="p-3 rounded-3" style="background-color: rgba(255,255,255,0.05); border-left: 3px solid var(--merah);">

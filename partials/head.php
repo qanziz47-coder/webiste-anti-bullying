@@ -24,12 +24,10 @@
         line-height: 1.65;
     }
 
-    /* Tipografi Dasar */
     h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -0.5px; }
     h1 { font-size: clamp(2rem, 4vw, 2.8rem); }
     h2 { font-size: 1.8rem; }
     
-    /* Tombol Dasar */
     .btn { 
         border-radius: 8px; 
         font-weight: 600; 
@@ -71,7 +69,6 @@
         box-shadow: 0 4px 12px rgba(30, 58, 95, 0.2); 
     }
 
-    /* --- NAVBAR PROFESIONAL --- */
     .navbar-profesional {
         padding: 15px 0;
         border-bottom: 1px solid #e5e7eb;
@@ -91,7 +88,6 @@
         color: var(--merah) !important;
     }
 
-    /* Garis bawah animasi saat hover menu */
     .navbar-profesional .nav-link::after {
         content: '';
         position: absolute;
@@ -106,7 +102,6 @@
         width: 100%;
     }
 
-    /* Tombol di Navbar */
     .btn-merah-profesional {
         background-color: var(--merah);
         color: #fff;

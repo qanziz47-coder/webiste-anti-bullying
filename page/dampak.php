@@ -79,7 +79,7 @@ include __DIR__ . '/../partials/head.php';
         <li>Dikucilkan dari pergaulan sehat</li>
         <li>Kesulitan membangun hubungan yang baik</li>
         <li>Berisiko melakukan kekerasan yang lebih serius di masa depan</li>
-        <li>Prestasi akademis terganggu karena sering dipanggil guru BK</li>
+        <li>Prestasi akademis terganggu karena sering dipanggil Satgas Anti-Bullying</li>
         <li>Citra diri buruk di mata teman dan guru</li>
       </ul>
     </div>
@@ -149,7 +149,7 @@ include __DIR__ . '/../partials/head.php';
     <h5 class="fw-bold mb-2">Jangan tunggu dampaknya makin parah.</h5>
     <p class="small mb-3 opacity-75">
       Kalau kamu atau temanmu mengalami bullying, laporkan sekarang.
-      Laporan bisa dikirim tanpa nama dan akan ditangani oleh guru BK.
+      Laporan bisa dikirim tanpa nama dan akan ditangani oleh Satgas Anti-Bullying.
     </p>
     <a href="<?= BASE_URL ?>lapor.php" class="btn btn-light fw-semibold">Buat Laporan</a>
   </div>
@@ -157,7 +157,7 @@ include __DIR__ . '/../partials/head.php';
   <div class="p-3 bg-light rounded-3 small text-secondary mt-4">
     <strong>Catatan:</strong> Halaman ini bersifat edukatif. Jika kamu atau seseorang
     yang kamu kenal mengalami dampak serius seperti depresi berat atau keinginan
-    menyakiti diri, segera hubungi guru BK, orang tua, atau layanan konseling
+    menyakiti diri, segera hubungi Satgas Anti-Bullying, orang tua, atau layanan konseling
     profesional.
   </div>
 

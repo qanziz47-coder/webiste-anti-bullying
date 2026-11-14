@@ -40,13 +40,12 @@ if (!empty($_FILES['bukti']['name'])) {
     move_uploaded_file($_FILES['bukti']['tmp_name'], __DIR__ . '/uploads/' . $namaFile);
 }
 
-// Generate Kode Tracking
 $kode = 'LAP-' . date('Ymd') . '-' . strtoupper(bin2hex(random_bytes(3)));
 
 // Simpan ke Database
 $stmt = $pdo->prepare("INSERT INTO laporan (kode, jenis, kronologi, anonim, nama_pelapor, kontak, bukti) VALUES (?,?,?,?,?,?,?)");
 $stmt->execute([$kode, $jenis, $kronologi, $anonim, $nama, $kontak, $namaFile]);
 
-// Redirect kembali ke form dengan pesan sukses
+// Redirect kembali setelah form dengan pesan sukses
 header('Location: lapor.php?sukses=1&kode=' . urlencode($kode));
 exit;

@@ -17,7 +17,7 @@ Sistem ini juga menyediakan informasi edukatif mengenai bullying, dampaknya, ser
   Setiap laporan mendapatkan kode unik yang dapat digunakan untuk memantau perkembangan penanganan laporan.
 
 - **Manajemen Laporan Admin**  
-  Panel khusus Guru BK untuk melihat detail laporan dan memperbarui status penanganan:
+  Panel khusus Satgas Anti-Bullying untuk melihat detail laporan dan memperbarui status penanganan:
   - Diterima
   - Diproses
   - Selesai
@@ -117,7 +117,7 @@ Website sekarang dapat dijalankan melalui localhost.
 ```text
 anti_bully/
 │
-├── admin/              # Panel administrasi Guru BK
+├── admin/              # Panel administrasi Satgas Anti-Bullying
 │
 ├── assets/             # File gambar, CSS, JavaScript, dan aset lainnya
 │
@@ -137,6 +137,31 @@ anti_bully/
 │
 └── anti_bully.sql       # File database
 ```
+
+## 🖥️ Panduan Akses Panel Admin
+
+Sistem ini dilengkapi dengan halaman administrator yang dikhususkan untuk Guru BK / Satgas Anti-Bullying untuk mengelola laporan yang masuk. 
+
+### 1. Cara Login Admin
+- **URL Akses:** `http://localhost/anti_bully/admin/login.php` (sesuaikan dengan nama folder proyek Anda).
+- **Username Default:** `admin`
+- **Password Default:** *(Sesuaikan dengan password yang Anda buat di database, tapi default `password` )*.
+
+*(Catatan: Sangat disarankan untuk mengganti password default dengan password yang lebih aman melalui phpMyAdmin sebelum website digunakan).*
+
+### 2. Fitur di Dashboard Admin
+Setelah berhasil login, Admin dapat mengakses beberapa fitur utama:
+- **Melihat Statistik Ringkas:** Menampilkan total laporan yang masuk, jumlah angket yang diisi, dan jumlah laporan yang telah selesai ditangani.
+- **Tabel Laporan Masuk:** Melihat daftar semua laporan (Kode Tracking, Jenis Perundungan, Status Pelapor Anonim/Nama, Tanggal, dan Status Penanganan).
+
+### 3. Fitur Tindak Lanjut (Halaman Detail Laporan)
+Saat Admin mengklik tombol **"Detail"** pada salah satu laporan, Admin dapat melakukan dua hal penting:
+1. **Mengubah Status Laporan:** Memperbarui status dari *Diterima* menjadi *Diproses* (sedang ditangani) atau *Selesai* (kasus selesai). Siswa akan melihat perubahan ini saat mengecek kode tracking.
+2. **Membalas Pesan Pelapor:** Admin dapat mengetik pesan tanggapan (misal: *"Pelaku sudah dipanggil dan diberikan sanksi. Jangan takut untuk melapor lagi."*). Pesan ini akan muncul di halaman `cek_status.php` milik siswa.
+
+### 4. Keamanan Panel Admin
+- Halaman admin dilindungi oleh sistem *Session* PHP. Jika pengguna belum login dan mencoba mengakses URL `dashboard.php` secara paksa, sistem akan otomatis mengarahkan mereka kembali ke halaman login.
+- File bukti yang diunggah siswa (`uploads/`) diproteksi dengan `.htaccess`, sehingga bukti **hanya bisa dilihat oleh Admin yang sudah login** melalui file perantara `lihat.php`.
 
 ## 👨‍💻 Pengembang
 

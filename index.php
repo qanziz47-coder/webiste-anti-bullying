@@ -10,23 +10,21 @@ include 'partials/head.php';
 ?>
 
 <!-- ================= HERO ================= -->
-<section id="tinggi" class="py-5" style="background-color: #fafafa; border-bottom: 1px solid #eaeaea;">
-  <div class="container py-5">
+<section class="py-5" style="background-color: #fafafa; border-bottom: 1px solid #eaeaea;">
+  <div class="container">
     <div class="row align-items-center g-5">
       
       <div class="col-lg-6">
         <div class="text-uppercase small fw-bold mb-3" style="color: var(--merah); letter-spacing: 1px;">
           Layanan Anti Bullying
         </div>
-        <!-- Typo "Perundungan" sudah diperbaiki menjadi "Perundungan" -->
         <h1 class="fw-bolder mb-3" style="font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1.2; letter-spacing: -1px;">
           Hentikan<br>Perundungan
         </h1>
         <p class="text-secondary mb-4" style="font-size: 1.05rem; max-width: 500px;">
-          Ketika orang dewasa merespons perilaku perundungan dengan cepat dan konsisten, mereka mengirimkan pesan bahwa hal itu tidak dapat diterima. Penelitian menunjukkan bahwa hal ini dapat menghentikan perilaku perundungan seiring waktu. Orang tua, staf sekolah, dan orang dewasa lainnya di komunitas dapat membantu anak-anak mencegah perundungan dengan membicarakannya, membangun lingkungan sekolah yang aman, dan menciptakan strategi pencegahan perundungan di seluruh komunitas.
+          Ketika orang dewasa merespons perilaku perundungan dengan cepat dan konsisten, mereka mengirimkan pesan bahwa hal itu tidak dapat diterima. Orang tua, staf sekolah, dan orang dewasa lainnya dapat membantu anak-anak mencegah perundungan dengan membangun lingkungan sekolah yang aman.
         </p>
         <div class="d-flex flex-wrap gap-3">
-          <!-- Tanda seru dihapus -->
           <a href="lapor.php" class="btn btn-aksen btn-lg px-4 py-3 fw-bold" style="border-radius: 8px;">
             Buat Laporan
           </a>
@@ -71,8 +69,8 @@ include 'partials/head.php';
 <?php endif; ?>
 
 <!-- ================= JENIS BULLYING ================= -->
-<section class="py-5">
-  <div class="container py-4">
+<section class="py-5 bg-white">
+  <div class="container">
     <div class="row g-4">
       
       <div class="col-md-6 col-lg-3">
@@ -120,11 +118,10 @@ include 'partials/head.php';
 </section>
 
 <!-- ================= PERLINDUNGAN KHUSUS PEREMPUAN ================= -->
-<section class="py-5 bg-white border-top">
-  <div class="container py-4">
+<section class="py-5 bg-light border-top">
+  <div class="container">
     <div class="row align-items-center g-5">
       
-      <!-- Kolom Kiri: Teks Hukum (Intisari) -->
       <div class="col-lg-6">
         <div class="text-uppercase small fw-bold mb-2" style="color: #d81b60; letter-spacing: 1px;">
           Kesetaraan & Perlindungan
@@ -136,44 +133,32 @@ include 'partials/head.php';
             Perundungan seringkali menyasar korban perempuan, termasuk mereka yang menyandang disabilitas. Negara menjamin perlindungan hukum melalui UU TPKS dan UU ITE untuk menjerat pelaku body shaming, pelecehan verbal, hingga penyebaran konten pribadi secara ilegal.
         </p>
         
-        <!-- Poin 1: UUD 1945 -->
         <div class="d-flex gap-3 mb-3">
-          <div class="flex-shrink-0">
-            <i class="bi bi-bank fs-4" style="color: #d81b60;"></i>
-          </div>
+          <div class="flex-shrink-0"><i class="bi bi-bank fs-4" style="color: #d81b60;"></i></div>
           <div>
             <h6 class="fw-bold mb-1">UUD 1945 (Pasal 28D & 28I)</h6>
             <p class="text-secondary small mb-0">Menjamin hak setiap orang atas perlindungan hukum yang adil dan bebas dari segala bentuk perlakuan diskriminatif.</p>
           </div>
         </div>
 
-        <!-- Poin 2: CEDAW -->
         <div class="d-flex gap-3 mb-3">
-          <div class="flex-shrink-0">
-            <i class="bi bi-globe fs-4" style="color: #d81b60;"></i>
-          </div>
+          <div class="flex-shrink-0"><i class="bi bi-globe fs-4" style="color: #d81b60;"></i></div>
           <div>
             <h6 class="fw-bold mb-1">UU No. 7 Tahun 1984 (CEDAW)</h6>
             <p class="text-secondary small mb-0">Konvensi Internasional penghapusan segala bentuk diskriminasi terhadap perempuan yang diratifikasi Indonesia.</p>
           </div>
         </div>
 
-        <!-- Poin 3: UU TPKS & Disabilitas -->
         <div class="d-flex gap-3 mb-3">
-          <div class="flex-shrink-0">
-            <i class="bi bi-shield-check fs-4" style="color: #d81b60;"></i>
-          </div>
+          <div class="flex-shrink-0"><i class="bi bi-shield-check fs-4" style="color: #d81b60;"></i></div>
           <div>
             <h6 class="fw-bold mb-1">UU No. 12 Tahun 2022 (TPKS) & UU No. 8 Tahun 2016</h6>
             <p class="text-secondary small mb-0">Memberikan perlindungan khusus dan hukuman tambahan bagi pelaku kekerasan/pelecehan terhadap perempuan dan penyandang disabilitas.</p>
           </div>
         </div>
 
-        <!-- Poin 4: Layanan Bantuan -->
         <div class="d-flex gap-3">
-          <div class="flex-shrink-0">
-            <i class="bi bi-people-fill fs-4" style="color: #d81b60;"></i>
-          </div>
+          <div class="flex-shrink-0"><i class="bi bi-people-fill fs-4" style="color: #d81b60;"></i></div>
           <div>
             <h6 class="fw-bold mb-1">P2TP2A & SAPA 129</h6>
             <p class="text-secondary small mb-0">Layanan pengaduan resmi negara yang menyediakan pendampingan psikologis dan hukum bagi korban.</p>
@@ -181,7 +166,6 @@ include 'partials/head.php';
         </div>
       </div>
 
-      <!-- Kolom Kanan: Foto -->
       <div class="col-lg-6 text-center">
         <img src="<?= BASE_URL ?>assets/img/perempuan-kuat.jpg" 
              alt="Dukungan sesama siswi" 
@@ -195,15 +179,16 @@ include 'partials/head.php';
 </section>
 
 <!-- ================= PERLINDUNGAN & PERAN LAKI-LAKI ================= -->
-<section class="py-5" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
-  <div class="container py-4">
+<section class="py-5 bg-white border-top">
+  <div class="container">
     <div class="row align-items-center g-5">
       
       <div class="col-lg-6 text-center order-2 order-lg-1">
         <img src="<?= BASE_URL ?>assets/img/laki-laki-kuat.jpg" 
              alt="Dukungan sesama siswa laki-laki" 
              class="img-fluid rounded-4 shadow-sm"
-             style="max-height: 450px; object-fit: cover; width: 100%;">
+             style="max-height: 450px; object-fit: cover; width: 100%;"
+             onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop';">
       </div>
 
       <div class="col-lg-6 order-1 order-lg-2">
@@ -218,9 +203,7 @@ include 'partials/head.php';
         </p>
         
         <div class="d-flex gap-3 mb-3">
-          <div class="flex-shrink-0">
-            <i class="bi bi-shield-check fs-4" style="color: #1e3a5f;"></i>
-          </div>
+          <div class="flex-shrink-0"><i class="bi bi-shield-check fs-4" style="color: #1e3a5f;"></i></div>
           <div>
             <h6 class="fw-bold mb-1">Hak Perlindungan yang Sama</h6>
             <p class="text-secondary small mb-0">Hukum Indonesia (UUD 1945 & UU Perlindungan Anak) melindungi semua jenis kelamin dari kekerasan, pemaksaan, dan ancaman.</p>
@@ -228,9 +211,7 @@ include 'partials/head.php';
         </div>
 
         <div class="d-flex gap-3 mb-3">
-          <div class="flex-shrink-0">
-            <i class="bi bi-x-circle fs-4" style="color: #1e3a5f;"></i>
-          </div>
+          <div class="flex-shrink-0"><i class="bi bi-x-circle fs-4" style="color: #1e3a5f;"></i></div>
           <div>
             <h6 class="fw-bold mb-1">Berhenti Menjadi Pelaku</h6>
             <p class="text-secondary small mb-0">Membuktikan "kejantanan" dengan cara memukul atau merundung teman adalah tindakan pengecut yang dapat dijerat Pasal 76C UU Perlindungan Anak.</p>
@@ -238,9 +219,7 @@ include 'partials/head.php';
         </div>
 
         <div class="d-flex gap-3">
-          <div class="flex-shrink-0">
-            <i class="bi bi-person-check-fill fs-4" style="color: #1e3a5f;"></i>
-          </div>
+          <div class="flex-shrink-0"><i class="bi bi-person-check-fill fs-4" style="color: #1e3a5f;"></i></div>
           <div>
             <h6 class="fw-bold mb-1">Berani Menjadi Pelindung</h6>
             <p class="text-secondary small mb-0">Laki-laki sejati adalah mereka yang berani membela korban, mencegah temannya melakukan perundungan, dan tidak takut melaporkan jika melihat kekerasan.</p>
@@ -253,11 +232,10 @@ include 'partials/head.php';
 </section>
 
 <!-- ================= DAMPAK ================= -->
-<section class="py-5" style="background-color: #fafafa; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
-  <div class="container py-4">
+<section class="py-5 bg-light border-top border-bottom">
+  <div class="container">
     <div class="row align-items-center g-5">
       
-      <!-- Teks Kiri -->
       <div class="col-lg-6">
         <div class="text-uppercase small fw-bold mb-2" style="color: var(--merah); letter-spacing: 1px;">
           Edukasi
@@ -267,7 +245,6 @@ include 'partials/head.php';
           Bullying bukan sekadar "bercanda". Dampaknya bisa jangka panjang, bukan hanya bagi korban, tetapi juga pelaku dan lingkungan sekolah.
         </p>
         
-        <!-- Daftar Poin dengan Ikon -->
         <ul class="list-unstyled mb-4">
           <li class="mb-3 d-flex align-items-start gap-2">
             <i class="bi bi-heart-pulse-fill text-danger mt-1"></i>
@@ -292,7 +269,6 @@ include 'partials/head.php';
         </a>
       </div>
 
-      <!-- Foto Kanan -->
       <div class="col-lg-6 text-center">
         <img src="<?= BASE_URL ?>assets/img/dampak-sedih.jpg" 
              alt="Siswa terdampak bullying" 
@@ -305,36 +281,9 @@ include 'partials/head.php';
   </div>
 </section>
 
-<!-- ================= Dapatkan Bantuan ================= -->
-<section class="py-5 bg-white" style="margin-bottom: 80px;">
-  <div class="container py-4">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        
-        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" 
-             style="width: 70px; height: 70px; background-color: #fee2e2; color: #b91c1c;">
-          <i class="bi bi-life-preserver fs-2"></i>
-        </div>
-
-        <h2 class="fw-bold mb-3" style="letter-spacing: -0.5px;">Butuh Bantuan Sekarang?</h2>
-        
-        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
-          Jika kamu telah melakukan segala cara untuk menyelesaikan situasi ini namun tidak ada yang berhasil, atau jika kamu/temanmu berada dalam bahaya langsung, jangan tetap diam. Ada cara untuk mendapatkan bantuan.
-        </p>
-
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <a href="lapor.php" class="btn btn-aksen btn-lg px-4 fw-bold" style="border-radius: 8px;">
-            Buat Laporan Darurat
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= VIDEO EDUKASI ================= -->
 <section class="py-5 video-tengah">
-  <div class="container py-4">
+  <div class="container">
     <div class="row align-items-center g-5">
       
       <div class="col-lg-6">
@@ -347,11 +296,11 @@ include 'partials/head.php';
         </div>
       </div>
 
-      <div class="col-lg-6 text-black">
-        <h2 class="fw-bold mb-3" style="line-height: 1.3; letter-spacing: -0.5px;">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3 text-dark" style="line-height: 1.3; letter-spacing: -0.5px;">
           Gimana Cara Menghadapi Bullying?
         </h2>
-        <p class="text-kecil opacity-75 mb-4" style="font-size: 1.05rem;">
+        <p class="text-dark opacity-75 mb-4" style="font-size: 1.05rem;">
           Tonton video edukasi singkat ini untuk memahami langkah-langkah yang bisa kamu ambil jika mengalami atau melihat tindakan perundungan di sekolah.
         </p>
         <a href="https://youtu.be/kMQzcsaRtyk" target="_blank" class="btn btn-aksen px-4 py-2 fw-bold shadow-sm" style="border-radius: 8px;">
@@ -364,30 +313,40 @@ include 'partials/head.php';
 </section>
 
 <!-- ================= BANTUAN PEMERINTAH ================= -->
-<section class="py-5 bg-light" style="margin-top: 120px;">
+<section class="py-5 bg-light">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <h4 class="fw-bold mb-3">Butuh Bantuan dari Pihak Luar Sekolah?</h4>
-        <p class="text-secondary mb-4">
-          Jika kamu merasa tidak aman melapor ke sekolah, kamu bisa menghubungi layanan resmi pemerintah secara anonim dan gratis.
-        </p>
         
+        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" 
+             style="width: 70px; height: 70px; background-color: #fee2e2; color: #b91c1c;">
+          <i class="bi bi-life-preserver fs-2"></i>
+        </div>
+
+        <h2 class="fw-bold mb-3" style="letter-spacing: -0.5px;">Butuh Bantuan Sekarang?</h2>
+        
+        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
+          Jika kamu telah melakukan segala cara untuk menyelesaikan situasi ini namun tidak ada yang berhasil, atau jika kamu/temanmu berada dalam bahaya langsung, jangan tetap diam.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+          <a href="lapor.php" class="btn btn-aksen btn-lg px-4 fw-bold" style="border-radius: 8px;">
+            Buat Laporan Darurat
+          </a>
+        </div>
+        
+        <hr class="my-4">
+        
+        <h5 class="fw-bold mb-3">Atau hubungi layanan pemerintah secara anonim:</h5>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
-          <!-- Layanan SAPA 129 (KemenPPPA) -->
           <a href="https://wa.me/628111129129" target="_blank" class="btn btn-outline-success btn-lg px-4 fw-bold" style="border-radius: 8px;">
             <i class="bi bi-whatsapp me-2"></i>SAPA 129 (KemenPPPA)
           </a>
-          
-          <!-- Layanan KPAI -->
           <a href="https://wa.me/6281110027727" target="_blank" class="btn btn-outline-primary btn-lg px-4 fw-bold" style="border-radius: 8px;">
             <i class="bi bi-shield-check me-2"></i>KPAI
           </a>
         </div>
         
-        <p class="text-secondary small mt-3 mb-0">
-          <i class="bi bi-lock-fill me-1"></i> Layanan ini dijamin kerahasiaannya oleh negara.
-        </p>
       </div>
     </div>
   </div>

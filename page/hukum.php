@@ -10,7 +10,7 @@ include __DIR__ . '/../partials/head.php';
     <p class="text-secondary">Referensi hukum di Indonesia yang dapat menjerat pelaku perundungan, baik di dunia nyata maupun dunia maya. <br> Terakhir diperbarui: 14 November 2026 — Mengacu pada UU No. 1 Tahun 2024.</p>
   </div>
 
-  <!-- 1. UU ITE -->
+  <!-- UU ITE -->
   <section class="mb-5">
     <h3 class="fw-bold mb-3 border-bottom pb-2">1. Undang-Undang ITE (UU No. 1 Tahun 2024)</h3>
     <p class="text-secondary small mb-4">
@@ -46,7 +46,7 @@ include __DIR__ . '/../partials/head.php';
     </div>
   </section>
 
-  <!-- 2. UU PERLINDUNGAN ANAK -->
+  <!-- UU PERLINDUNGAN ANAK -->
   <section class="mb-5">
     <h3 class="fw-bold mb-3 border-bottom pb-2">2. UU Perlindungan Anak (UU No. 35 Tahun 2014)</h3>
     <p class="text-secondary small mb-4">
@@ -69,7 +69,7 @@ include __DIR__ . '/../partials/head.php';
     </div>
   </section>
 
-  <!-- 3. PELAKU ANAK -->
+  <!-- PELAKU ANAK -->
   <section class="mb-5">
     <h3 class="fw-bold mb-3 border-bottom pb-2">3. Jika Pelaku Masih Anak (UU SPPA)</h3>
     <p class="text-secondary small mb-3">
@@ -81,7 +81,7 @@ include __DIR__ . '/../partials/head.php';
     </ul>
   </section>
 
-  <!-- 4. JALUR NON-PIDANA -->
+  <!-- JALUR NON-PIDANA -->
   <section class="mb-5">
     <h3 class="fw-bold mb-3 border-bottom pb-2">4. Jalur Non-Pidana: Restorative Justice</h3>
     <p class="text-secondary small mb-0">
@@ -89,7 +89,7 @@ include __DIR__ . '/../partials/head.php';
     </p>
   </section>
 
-<!-- ================= 5. PERLINDUNGAN PEREMPUAN ================= -->
+<!-- ================= PERLINDUNGAN PEREMPUAN ================= -->
 <section class="mb-5">
   <h3 class="fw-bold mb-3 border-bottom pb-2">5. Perlindungan Khusus bagi Perempuan</h3>
   <p class="text-secondary small mb-3">
@@ -97,7 +97,7 @@ include __DIR__ . '/../partials/head.php';
   </p>
 
   <div class="row g-3">
-    <!-- Hak Perlindungan (Hukum) -->
+    <!-- Hak Perlindungan -->
     <div class="col-md-6">
       <div class="card border-light-subtle shadow-sm h-100">
         <div class="card-body p-4">
@@ -127,7 +127,7 @@ include __DIR__ . '/../partials/head.php';
       </div>
     </div>
 
-    <!-- Berani Jadi Pelindung / Melapor -->
+    <!-- Berani Jadi Pelindung  -->
     <div class="col-12 mt-3">
       <div class="card border-light-subtle shadow-sm" style="border-left: 4px solid #d81b60 !important;">
         <div class="card-body p-4">
@@ -135,7 +135,7 @@ include __DIR__ . '/../partials/head.php';
             <i class="bi bi-person-check-fill fs-3" style="color: #d81b60;"></i>
             <div>
               <h6 class="fw-bold mb-1">Berani Melapor & Mendukung Korban</h6>
-              <p class="text-secondary small mb-0">Korban berhak mendapatkan pendampingan psikologis dan hukum. Jangan takut untuk melapor ke Guru BK atau layanan SAPA 129 jika mengalami atau melihat kekerasan berbasis gender.</p>
+              <p class="text-secondary small mb-0">Korban berhak mendapatkan pendampingan psikologis dan hukum. Jangan takut untuk melapor ke Satgas Anti-Bullying atau layanan SAPA 129 jika mengalami atau melihat kekerasan berbasis gender.</p>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@ include __DIR__ . '/../partials/head.php';
   </div>
 </section>
 
-<!-- ================= 5. PERLINDUNGAN LAKI-LAKI ================= -->
+<!-- ================= PERLINDUNGAN LAKI-LAKI ================= -->
 <section class="mb-5">
   <h3 class="fw-bold mb-3 border-bottom pb-2">6. Perlindungan & Peran Laki-Laki</h3>
   <p class="text-secondary small mb-3">

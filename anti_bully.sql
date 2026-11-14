@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2026 at 08:10 AM
+-- Generation Time: Nov 14, 2026 at 12:37 PM
 -- Server version: 10.11.16-MariaDB
 -- PHP Version: 8.3.36
 
@@ -33,6 +33,28 @@ CREATE TABLE `admin` (
   `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`) VALUES
+(1, 'admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `angket`
+--
+
+CREATE TABLE `angket` (
+  `id` int(11) NOT NULL,
+  `kelas` varchar(20) DEFAULT NULL,
+  `pernah_dibully` tinyint(4) DEFAULT NULL,
+  `jenis_bullying` varchar(50) DEFAULT NULL,
+  `tempat` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 -- --------------------------------------------------------
 
 --
@@ -49,7 +71,8 @@ CREATE TABLE `laporan` (
   `kontak` varchar(100) DEFAULT NULL,
   `bukti` varchar(255) DEFAULT NULL,
   `status` enum('diterima','diproses','selesai') DEFAULT 'diterima',
-  `created_at` timestamp NULL DEFAULT current_timestamp()
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `balasan_admin` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -62,6 +85,12 @@ CREATE TABLE `laporan` (
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `angket`
+--
+ALTER TABLE `angket`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `laporan`
@@ -78,6 +107,12 @@ ALTER TABLE `laporan`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `angket`
+--
+ALTER TABLE `angket`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
