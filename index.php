@@ -70,7 +70,7 @@ include 'partials/head.php';
 </section>
 <?php endif; ?>
 
-<!-- ================= JENIS BULLYING (EDUKASI) ================= -->
+<!-- ================= JENIS BULLYING ================= -->
 <section class="py-5">
   <div class="container py-4">
     <div class="row g-4">
@@ -119,32 +119,188 @@ include 'partials/head.php';
   </div>
 </section>
 
+<!-- ================= PERLINDUNGAN KHUSUS PEREMPUAN ================= -->
+<section class="py-5 bg-white border-top">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      
+      <!-- Kolom Kiri: Teks Hukum (Intisari) -->
+      <div class="col-lg-6">
+        <div class="text-uppercase small fw-bold mb-2" style="color: #d81b60; letter-spacing: 1px;">
+          Kesetaraan & Perlindungan
+        </div>
+        <h2 class="fw-bolder mb-3" style="letter-spacing: -0.5px;">
+          Perlindungan Hukum bagi Perempuan
+        </h2>
+        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
+            Perundungan seringkali menyasar korban perempuan, termasuk mereka yang menyandang disabilitas. Negara menjamin perlindungan hukum melalui UU TPKS dan UU ITE untuk menjerat pelaku body shaming, pelecehan verbal, hingga penyebaran konten pribadi secara ilegal.
+        </p>
+        
+        <!-- Poin 1: UUD 1945 -->
+        <div class="d-flex gap-3 mb-3">
+          <div class="flex-shrink-0">
+            <i class="bi bi-bank fs-4" style="color: #d81b60;"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">UUD 1945 (Pasal 28D & 28I)</h6>
+            <p class="text-secondary small mb-0">Menjamin hak setiap orang atas perlindungan hukum yang adil dan bebas dari segala bentuk perlakuan diskriminatif.</p>
+          </div>
+        </div>
+
+        <!-- Poin 2: CEDAW -->
+        <div class="d-flex gap-3 mb-3">
+          <div class="flex-shrink-0">
+            <i class="bi bi-globe fs-4" style="color: #d81b60;"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">UU No. 7 Tahun 1984 (CEDAW)</h6>
+            <p class="text-secondary small mb-0">Konvensi Internasional penghapusan segala bentuk diskriminasi terhadap perempuan yang diratifikasi Indonesia.</p>
+          </div>
+        </div>
+
+        <!-- Poin 3: UU TPKS & Disabilitas -->
+        <div class="d-flex gap-3 mb-3">
+          <div class="flex-shrink-0">
+            <i class="bi bi-shield-check fs-4" style="color: #d81b60;"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">UU No. 12 Tahun 2022 (TPKS) & UU No. 8 Tahun 2016</h6>
+            <p class="text-secondary small mb-0">Memberikan perlindungan khusus dan hukuman tambahan bagi pelaku kekerasan/pelecehan terhadap perempuan dan penyandang disabilitas.</p>
+          </div>
+        </div>
+
+        <!-- Poin 4: Layanan Bantuan -->
+        <div class="d-flex gap-3">
+          <div class="flex-shrink-0">
+            <i class="bi bi-people-fill fs-4" style="color: #d81b60;"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">P2TP2A & SAPA 129</h6>
+            <p class="text-secondary small mb-0">Layanan pengaduan resmi negara yang menyediakan pendampingan psikologis dan hukum bagi korban.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Foto -->
+      <div class="col-lg-6 text-center">
+        <img src="<?= BASE_URL ?>assets/img/perempuan-kuat.jpg" 
+             alt="Dukungan sesama siswi" 
+             class="img-fluid rounded-4 shadow-sm"
+             style="max-height: 450px; object-fit: cover; width: 100%;"
+             onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop';">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERLINDUNGAN & PERAN LAKI-LAKI ================= -->
+<section class="py-5" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-lg-6 text-center order-2 order-lg-1">
+        <img src="<?= BASE_URL ?>assets/img/laki-laki-kuat.jpg" 
+             alt="Dukungan sesama siswa laki-laki" 
+             class="img-fluid rounded-4 shadow-sm"
+             style="max-height: 450px; object-fit: cover; width: 100%;">
+      </div>
+
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="text-uppercase small fw-bold mb-2" style="color: #1e3a5f; letter-spacing: 1px;">
+          Kesetaraan & Perlindungan
+        </div>
+        <h2 class="fw-bolder mb-3" style="letter-spacing: -0.5px;">
+          Perlindungan & Peran Laki-Laki
+        </h2>
+        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
+          Laki-laki juga memiliki hak yang sama untuk dilindungi dari kekerasan. Tidak jarang, korban bullying fisik adalah siswa laki-laki. Selain itu, laki-laki memiliki peran penting untuk menghentikan budaya perundungan.
+        </p>
+        
+        <div class="d-flex gap-3 mb-3">
+          <div class="flex-shrink-0">
+            <i class="bi bi-shield-check fs-4" style="color: #1e3a5f;"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">Hak Perlindungan yang Sama</h6>
+            <p class="text-secondary small mb-0">Hukum Indonesia (UUD 1945 & UU Perlindungan Anak) melindungi semua jenis kelamin dari kekerasan, pemaksaan, dan ancaman.</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 mb-3">
+          <div class="flex-shrink-0">
+            <i class="bi bi-x-circle fs-4" style="color: #1e3a5f;"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">Berhenti Menjadi Pelaku</h6>
+            <p class="text-secondary small mb-0">Membuktikan "kejantanan" dengan cara memukul atau merundung teman adalah tindakan pengecut yang dapat dijerat Pasal 76C UU Perlindungan Anak.</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3">
+          <div class="flex-shrink-0">
+            <i class="bi bi-person-check-fill fs-4" style="color: #1e3a5f;"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">Berani Menjadi Pelindung</h6>
+            <p class="text-secondary small mb-0">Laki-laki sejati adalah mereka yang berani membela korban, mencegah temannya melakukan perundungan, dan tidak takut melaporkan jika melihat kekerasan.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ================= DAMPAK ================= -->
 <section class="py-5" style="background-color: #fafafa; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
-  <div class="container">
+  <div class="container py-4">
     <div class="row align-items-center g-5">
+      
+      <!-- Teks Kiri -->
       <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">Dampak Bullying</h2>
-        <p class="text-secondary mb-4">
+        <div class="text-uppercase small fw-bold mb-2" style="color: var(--merah); letter-spacing: 1px;">
+          Edukasi
+        </div>
+        <h2 class="fw-bolder mb-3" style="letter-spacing: -0.5px;">Dampak Bullying</h2>
+        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
           Bullying bukan sekadar "bercanda". Dampaknya bisa jangka panjang, bukan hanya bagi korban, tetapi juga pelaku dan lingkungan sekolah.
         </p>
+        
+        <!-- Daftar Poin dengan Ikon -->
         <ul class="list-unstyled mb-4">
-          <li class="mb-2 d-flex gap-2"><i class="bi bi-dash text-dark"></i><span class="text-secondary">Cemas, depresi, dan harga diri menurun</span></li>
-          <li class="mb-2 d-flex gap-2"><i class="bi bi-dash text-dark"></i><span class="text-secondary">Menarik diri dari pergaulan</span></li>
-          <li class="mb-2 d-flex gap-2"><i class="bi bi-dash text-dark"></i><span class="text-secondary">Nilai akademis turun, sering bolos</span></li>
-          <li class="d-flex gap-2"><i class="bi bi-dash text-dark"></i><span class="text-secondary">Berisiko masalah hukum bagi pelaku</span></li>
+          <li class="mb-3 d-flex align-items-start gap-2">
+            <i class="bi bi-heart-pulse-fill text-danger mt-1"></i>
+            <span class="text-secondary">Cemas, depresi, dan harga diri menurun.</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start gap-2">
+            <i class="bi bi-person-dash-fill text-danger mt-1"></i>
+            <span class="text-secondary">Menarik diri dari pergaulan sosial.</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start gap-2">
+            <i class="bi bi-graph-down text-danger mt-1"></i>
+            <span class="text-secondary">Nilai akademis turun, sering membolos sekolah.</span>
+          </li>
+          <li class="d-flex align-items-start gap-2">
+            <i class="bi bi-shield-exclamation text-danger mt-1"></i>
+            <span class="text-secondary">Berisiko masalah hukum bagi pelaku perundungan.</span>
+          </li>
         </ul>
-        <a href="page/dampak.php" class="text-decoration-none fw-bold text-dark border-bottom border-dark pb-1">
-          Baca dampak lengkap
+        
+        <a href="page/dampak.php" class="btn btn-outline-dark fw-bold px-4 py-2" style="border-radius: 8px;">
+          Baca Dampak Lengkap
         </a>
       </div>
+
+      <!-- Foto Kanan -->
       <div class="col-lg-6 text-center">
         <img src="<?= BASE_URL ?>assets/img/dampak-sedih.jpg" 
-             alt="Ilustrasi dampak bullying" 
+             alt="Siswa terdampak bullying" 
              class="img-fluid rounded-4 shadow-sm"
-             style="max-height:300px; object-fit:cover;"
-             onerror="this.style.display='none';">
+             style="max-height: 400px; object-fit: cover; width: 100%;"
+             onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop';">
       </div>
+
     </div>
   </div>
 </section>

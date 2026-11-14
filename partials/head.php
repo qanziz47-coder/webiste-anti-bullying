@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?= $judul ?? 'Beranda' ?> — AntiBullying SMKN 1</title>
+<title><?= $judul ?? 'Beranda' ?> — AntiBullying </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="shortcut icon" href="<?= BASE_URL ?>assets/img/favicon.ico" type="image/x-icon">
 <style>
     :root {
         --biru: #1e3a5f;
@@ -120,7 +121,6 @@
         box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
     }
 
-    /* Kartu Jenis Bullying */
     .card-klik {
         cursor: pointer;
         transition: all 0.2s ease;

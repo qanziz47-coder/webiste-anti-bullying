@@ -1,6 +1,6 @@
 <?php
-require 'config/db.php';
-$judul = 'Cek Status Laporan';
+require_once 'config/db.php';
+$judul = 'Cek Status';
 include 'partials/head.php';
 
 $data = null;
@@ -12,38 +12,82 @@ if ($kodeInput !== '') {
 }
 ?>
 
-<div class="container py-5" style="max-width:640px;">
-  <h1 class="fw-bold mb-2">Cek Status Laporan</h1>
-  <p class="text-secondary mb-4">Masukkan kode tracking yang kamu terima.</p>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      
+      <!-- Header -->
+      <div class="text-center mb-4">
+        <h1 class="fw-bolder mb-2" style="letter-spacing: -0.5px;">Cek Status Laporan</h1>
+        <p class="text-secondary">Masukkan kode tracking yang kamu terima setelah mengirim laporan.</p>
+      </div>
 
-  <form method="GET" class="card p-4 shadow-sm mb-4">
-    <label class="form-label fw-semibold">Kode Tracking</label>
-    <div class="input-group">
-      <input type="text" name="kode" class="form-control" placeholder="LAP-20250701-A3F9C2" value="<?= e($kodeInput) ?>" required>
-      <button class="btn btn-danger">Cek</button>
+      <!-- Form Cek Status -->
+      <div class="card border-light-subtle shadow-sm mb-5" style="border-radius: 12px;">
+        <div class="card-body p-4 p-md-5">
+          <form method="GET">
+            <label class="form-label fw-bold">Kode Tracking</label>
+            <div class="input-group input-group-lg mb-3">
+              <input type="text" name="kode" class="form-control" placeholder="Contoh: LAP-20231025-A1B2C3" value="<?= e($kodeInput) ?>" required>
+              <button class="btn btn-danger px-4 fw-bold" type="submit">Cek</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Hasil Pencarian -->
+      <?php if ($kodeInput !== '' && !$data): ?>
+        <div class="alert alert-warning border-0 shadow-sm text-center">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>Kode tracking tidak ditemukan. Pastikan Anda mengetiknya dengan benar.
+        </div>
+      <?php endif; ?>
+
+      <?php if ($data): ?>
+        <div class="card border-success shadow-sm" style="border-radius: 12px; border-left: 5px solid #198754 !important;">
+          <div class="card-header bg-white border-0 pt-4 pb-0">
+            <h5 class="fw-bold mb-0 text-success"><i class="bi bi-check-circle-fill me-2"></i>Laporan Ditemukan</h5>
+          </div>
+          <div class="card-body">
+            <table class="table table-borderless table-sm mb-0">
+              <tr>
+                <td class="text-secondary" width="140">Kode Tracking</td>
+                <td class="fw-bold"><?= e($data['kode']) ?></td>
+              </tr>
+              <tr>
+                <td class="text-secondary">Jenis Laporan</td>
+                <td class="fw-bold"><?= e($data['jenis']) ?></td>
+              </tr>
+              <tr>
+                <td class="text-secondary">Tanggal Dilaporkan</td>
+                <td><?= date('d M Y - H:i', strtotime($data['created_at'])) ?></td>
+              </tr>
+              <tr>
+                <td class="text-secondary">Status Saat Ini</td>
+                <td>
+                  <?php
+                  $badge = ['diterima'=>'secondary','diproses'=>'warning','selesai'=>'success'][$data['status']] ?? 'secondary';
+                  $teks  = ['diterima'=>'Diterima (Menunggu Diproses)','diproses'=>'Sedang Ditangani oleh Guru BK','selesai'=>'Selesai Ditangani'][$data['status']] ?? $data['status'];
+                  ?>
+                  <span class="badge bg-<?= $badge ?> px-3 py-2" style="font-size: 0.85rem;"><?= $teks ?></span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      <?php endif; ?>
+
+      <!-- Panduan Tambahan (Mengisi ruang kosong) -->
+      <div class="mt-5 p-4 rounded-3 bg-light border border-light-subtle">
+        <h6 class="fw-bold mb-3">Lupa kode tracking kamu?</h6>
+        <ul class="text-secondary small mb-0 ps-3">
+          <li class="mb-2">Kode tracking diberikan <strong>tepat setelah kamu selesai mengirim laporan</strong> di halaman formulir.</li>
+          <li class="mb-2">Pastikan kamu sudah menyalin atau mengambil screenshot kode tersebut.</li>
+          <li>Jika kamu benar-benar kehilangannya, silakan buat laporan baru atau hubungi Guru BK secara langsung.</li>
+        </ul>
+      </div>
+
     </div>
-  </form>
-
-  <?php if ($kodeInput !== '' && !$data): ?>
-    <div class="alert alert-warning">Kode tidak ditemukan. Periksa kembali.</div>
-  <?php endif; ?>
-
-  <?php if ($data): ?>
-    <div class="card p-4 shadow-sm">
-      <h5 class="fw-bold mb-3">Hasil</h5>
-      <table class="table table-sm mb-0">
-        <tr><td class="fw-semibold">Kode</td><td><?= e($data['kode']) ?></td></tr>
-        <tr><td class="fw-semibold">Jenis</td><td><?= e($data['jenis']) ?></td></tr>
-        <tr><td class="fw-semibold">Tanggal</td><td><?= e($data['created_at']) ?></td></tr>
-        <tr><td class="fw-semibold">Status</td><td>
-          <?php
-          $badge = ['diterima'=>'secondary','diproses'=>'warning','selesai'=>'success'][$data['status']] ?? 'secondary';
-          ?>
-          <span class="badge bg-<?= $badge ?>"><?= e($data['status']) ?></span>
-        </td></tr>
-      </table>
-    </div>
-  <?php endif; ?>
+  </div>
 </div>
 
 <?php include 'partials/footer.php'; ?>

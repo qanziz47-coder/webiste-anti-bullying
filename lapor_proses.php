@@ -7,10 +7,13 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 $jenis     = trim($_POST['jenis'] ?? '');
+$korban      = trim($_POST['korban'] ?? '');
+$kehawatiran = trim($_POST['kehawatiran'] ?? '');
 $kronologi = trim($_POST['kronologi'] ?? '');
 $anonim    = isset($_POST['anonim']) ? 1 : 0;
 $nama      = $anonim ? null : trim($_POST['nama_pelapor'] ?? '');
 $kontak    = $anonim ? null : trim($_POST['kontak'] ?? '');
+$status_darurat = $_POST['status_darurat'] ?? '';
 
 if ($jenis === '' || $kronologi === '') {
     header('Location: lapor.php?error=' . urlencode('Jenis dan kronologi wajib diisi.')); 
