@@ -31,6 +31,9 @@
         <li class="nav-item">
           <a class="nav-link" href="<?= BASE_URL ?>cek_status.php">Cek Status</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= BASE_URL ?>angket.php">Angket</a>
+        </li>
       </ul>
       
       <div class="d-flex mt-3 mt-lg-0">

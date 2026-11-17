@@ -117,7 +117,7 @@ include 'partials/head.php';
   </div>
 </section>
 
-<!-- ================= PERLINDUNGAN KHUSUS PEREMPUAN ================= -->
+<!-- ================= PERLINDUNGAN PEREMPUAN ================= -->
 <section class="py-5 bg-light border-top">
   <div class="container">
     <div class="row align-items-center g-5">
@@ -178,7 +178,7 @@ include 'partials/head.php';
   </div>
 </section>
 
-<!-- ================= PERLINDUNGAN & PERAN LAKI-LAKI ================= -->
+<!-- ================= PERLINDUNGAN LAKI-LAKI ================= -->
 <section class="py-5 bg-white border-top">
   <div class="container">
     <div class="row align-items-center g-5">
